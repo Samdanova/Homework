@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        header,main,div,p,footer {border:1px solid pink}
+        header {
+            display: flex;
+            justify-content: center;
+        }
+        .flexcontainer {
+            display: flex;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .aside,
+        .main {
+            position: relative;
+            width: 100%;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        .mainpart {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .aside {
+            display: flex;
+            justify-content: center;
+        }
+
+        .add {
+            display: inline-flex;
+            padding-left: 130px;
+            flex-wrap: wrap;
+            width: 30%;
+        }
+        .add3 {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            clear: both;
+        }
+    </style>
+    <body>
+        <header>
+            <div>Шапка сайта</div>
+        </header>
+        <main class="flexcontainer">
+            <div class="main">
+                <p class="mainpart">Основная часть</p>
+                <p class="add">Еще 1</p>
+                <p class="add">Еще 2</p>
+                <p class="add3">Еще 3</p>
+            </div>
+            <aside class="aside">Боковая область</aside>
+        </main>
+        <footer class="footer">
+            <div>Секция футера 1</div>
+            <div>Секция футера 2</div>
+            <div>Секция футера 3</div>
+            <div>Секция футера 4</div>
+        </footer>
+    </body>
+</html>
