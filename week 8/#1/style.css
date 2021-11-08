@@ -1,0 +1,21 @@
+.start {
+    font-size: 20px;
+}
+
+.cards,
+.warm {
+    margin: 2% 10%;
+}
+
+.cards,
+.warm {
+    width: 80%;
+}
+
+.footer {
+    padding: 25px;
+}
+
+.navbar {
+    margin-right: 5em;
+}
