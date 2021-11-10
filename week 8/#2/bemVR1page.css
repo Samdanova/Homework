@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Intro';
+    src: url("fonts/IntroDemoCond-BlackCAPS.eot");
+    src: local('☺'), url("fonts/IntroDemoCond-BlackCAPS.woff") format('woff'), url("fonts/IntroDemoCond-BlackCAPS.ttf") format('truetype'), url("fonts/IntroDemoCond-BlackCAPS.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo__text {
+    margin-left: 15px;
+    font-family: 'Intro';
+    font-size: 1.5em;
+    line-height: 120%;
+    font-weight: bold;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo_img {
+    height: 40px;
+    width: 40px;
+}
+
+.trash__form {
+    padding: 15% 0 0;
+}
+
+.trash__button {
+    height: 38px;
+    width: 115px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #5222D0;
+    color: white;
+    Border-radius: 100px;
+    cursor: pointer;
+    font-family: 'Intro';
+}
+
+.trash__img_trash {
+    height: 13px;
+    width: 13px;
+    margin-left: 5px;
+
+}
+
+.main {
+    display: flex;
+    width: 97%;
+    margin: 2%;
+}
+
+.main-text {
+    margin-left: 120px;
+}
+
+.main-text__h1 {
+    width: 65%;
+}
+
+.main-text__text {
+    font-family: 'Intro';
+    font-size: 60px;
+
+}
+
+.main-text__p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 160%;
+    width: 70%;
+}
+
+.main-text__button {
+    height: 38px;
+    font-size: 35px;
+    background-color: #5222D0;
+    color: white;
+    Border-radius: 100px;
+    cursor: pointer;
+    font-family: 'Intro';
+    height: 84px;
+    width: 270px;
+    border-radius: 100px;
+}
+
+.main-text__card {
+    margin-left: 10px;
+}
+
+.main__img {
+    width: 70%;
+}
+
+.navbar {
+    display: flex;
+    margin-left: 10%;
+    align-items: flex-start;
+    margin-bottom: 10%;
+}
+
+.navbar__item {
+    margin: 0 10px;
+    color: #5222D0;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-family: 'Roboto+Slab'
+}
