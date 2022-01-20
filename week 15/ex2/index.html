@@ -1,0 +1,35 @@
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Форма регистрации</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    </head>
+    <body>
+      <div class="mainForm">
+<form name="nannyForm" onsubmit="return validate()">
+  <div class="signinforms">
+    <h1>Найти няню в Москве</h1>
+    <p>Пожалуйста, заполните анкету для формирования заявки на няню и автоматической регистрации в личном кабинете.
+        </p>
+    <hr class="inputsForm">
+    <input  id="name" type="text" placeholder="Ваше имя" name="name" required>
+    <input  id="surname" type="text" placeholder="Ваша фамилия" name="surname" required>
+    <input id="email" type="text" placeholder="Ваш e-mail" name="email" required>
+    <input id="mobile" type="tel" placeholder="+7 (999) 999-99-99" name="mobile" required>
+    <input id="child" type="tel" placeholder="Как зовут ребенка?" name="child" required>
+    <input  id="city" type="text" placeholder="Город" name="city" required>
+    <input id="checked" type="checkbox" checked="checked" name="agreement" style="margin-bottom:15px"> Я согласен с политикой конфиденциальности и условиями оферты
+</label>
+    <button type="submit" id="registerbtn" class="registerbtn" onclick="validate()">Отправить</button>
+  </div>
+</form>
+<script src="index.js"></script>
+</div>
+</body>
+</html>

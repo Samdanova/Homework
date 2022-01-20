@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div>Умножение:</div>
+<form action="#">
+    <label for="number">Введите 1 число:</label>
+    <input type="number" id="mult1" placeholder="Число 1">
+    <br><label for="number">Введите 2 число:</label>
+    <input type="number"id="mult2" placeholder="Число 2">
+    <p><input type="button" value="Умножить" onclick="multip()"></p>
+    <div id="result"></div><br>
+</form>
+<div>Деление:</div>
+<form action="#">
+    <label for="number">Введите 1 число:</label>
+    <input type="number" id="del1" placeholder="Число 1">
+    <br><label for="number">Введите 2 число:</label>
+    <input type="number"id="del2" placeholder="Число 2">
+    <p><input  id="operation" type="button" value="Разделить" onclick="del()"></p>
+    <div id="result2"></div><br>
+</form>
+
+<div>Сложение:</div>
+<form action="#">
+    <label for="number">Введите 1 число:</label>
+    <input type="number" id="plus1" placeholder="Число 1">
+    <br><label for="number">Введите 2 число:</label>
+    <input type="number"id="plus2" placeholder="Число 2">
+    <p><input type="button" value="Сложить" onclick="plus()"></p>
+    <div id="result3"></div><br>
+</form>
+
+<div>Вычитание:</div>
+<form action="#">
+    <label for="number">Введите 1 число:</label>
+    <input type="number" id="minus1" placeholder="Число 1">
+    <br><label for="number">Введите 2 число:</label>
+    <input type="number"id="minus2" placeholder="Число 2">
+    <p><input type="button" value="Вычесть" onclick="minus()"></p>
+    <div id="result4"></div><br>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
