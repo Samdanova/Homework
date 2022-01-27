@@ -1,0 +1,52 @@
+select {
+    width: 200px;
+    height: 1.7rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#container {
+    margin-top: 30px;
+    font-size: 25px;
+    color: rgb(155, 49, 49);
+    font-weight: bold;
+}
+
+.calculator {
+    font-size: 1.2rem;
+    width: 20%;
+    border: 3px solid rgb(155, 49, 49);
+    background-color: rgb(241, 209, 201);
+    padding: 1%;
+}
+
+.h1option {
+    margin-bottom: -1rem;
+    font-weight: bold;
+}
+
+.h2option {
+    font-weight: bold;
+}
+
+.inputFuel {
+    margin-bottom: 15px;
+}
+
+.span {
+    margin-bottom: 2rem;
+}
+
+.button {
+    font-size: 1.2rem;
+    background-color: rgb(155, 49, 49);
+    font-weight: bold;
+    width: 40%;
+    height: 3rem;
+    color: white;
+}

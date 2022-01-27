@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div class="calculator">
+    <form id='car'>
+        <p class="h1option">Марка машины</p>
+        <select id="model" >
+            <option value="0">Не знаю</option>
+          <option value="1">Audi</option>
+          <option value="2">Toyota</option>
+          <option value="3">Lada</option>
+          <option value="4">Lexus</option>
+        </select>
+      <P class="h1option">Модель машины</P>
+        <select id="type" disabled>
+      
+        </select>
+      
+        <p class="h1option">Год выпуска</p>
+        <select id="years" >
+          <option value="20">Раньше 2005</option>
+          <option value="100">2005-2011</option>
+          <option value="300">2012-2018</option>
+          <option value="500">2019-2021</option>
+        </select>
+
+        <span class="spanFuel">
+            <p class="h2option">Тип топлива</p>
+          <input type="radio" id="benzin"
+           name="fuel" value="20" class="inputFuel">
+          <label for="benzin">бензин (включая гибрид)</label><br>
+          <input type="radio" id="dizel"
+           name="fuel" value="30" class="inputFuel" checked>
+          <label for="dizel">дизельное топливо </label><br>
+          <input type="radio" id="electro"
+          name="fuel" value="50" checked>
+         <label for="electro">электрический</label>
+        </span>
+        
+        <span class="span">
+            <p class="h2option">Отметьте, если вы первый владелец:</p>
+        <input type="checkbox" id="buy"
+           name="buy" value="100">
+          <label for="buy">Покупал из салона</label>
+        </span>
+      </form>
+      <button id="button" class="button">Рассчитать</button>
+      <div id='container'></div>
+    </div> 
+    <script src="index.js"></script>
+</body>
+</html>
