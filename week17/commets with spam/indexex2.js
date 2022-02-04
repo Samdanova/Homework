@@ -4,12 +4,12 @@ function checkSpam() {
     let lowerStr = str.toLowerCase();
   let changeStr;
     if (lowerStr.includes('viagra'))  {
-       changeStr=lowerStr.replace("viagra","***");
+       changeStr=lowerStr.replace(/viagra/g,"***");
        return changeStr;
       }
     else {
           if( lowerStr.includes('xxx')){
-            changeStr=lowerStr.replace("xxx","***");
+            changeStr=lowerStr.replace(/xxx/g,"***");
             return changeStr;
           }
           else { 
