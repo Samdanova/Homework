@@ -1,0 +1,104 @@
+.chat {
+    border: 5px solid rgb(107, 103, 103);
+    margin: 5% auto;
+    width: 70%;
+    height: 100%;
+    background: rgb(245, 235, 235);
+    color: rgb(14, 13, 13);
+}
+
+.chat-messages {
+    height: 600px;
+    background: rgb(245, 235, 235);
+    border: none;
+    color: black
+}
+
+.chat-messages__content {
+    padding: 1px;
+}
+
+.chat-input {
+    display: grid;
+    grid-template-columns: 10% 50% 20% 20%;
+    grid-template-rows: 35% 90%;
+    height: 150px;
+    border-top: 3px solid rgb(107, 103, 103);
+}
+
+input,
+button {
+    font-size: 16px;
+    vertical-align: middle;
+    background: white;
+    color: rgb(17, 16, 16);
+    display: inline-block;
+}
+
+.chat-form__input {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 80%;
+    height: 80px
+}
+
+button {
+    width: 90%;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    height: 80px;
+    color: rgb(107, 103, 103);
+    font-weight: bold;
+
+}
+
+.inputName {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 2rem;
+    width: 50%;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.text {
+    background-color: rgb(231, 205, 205);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 50%;
+    font-size: 1.5rem;
+    margin-left: 5px;
+
+}
+
+.myPhoto {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    margin-left: 40%;
+    margin-top: 0.5rem;
+    background: rgb(245, 235, 235);
+
+}
+
+.imgPreview {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem 1rem;
+    border-radius: 100px;
+}
+
+.photoInChat {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    margin-right: 1rem;
+
+}

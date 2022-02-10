@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница-опросник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>У тебя есть котик? Вноси информацию в форму ниже</h1>
+    <form>
+    <p>Имя питомца:</p>  
+    <p><input type="text" name="firstname" placeholder="Имя вашего питомца" required/></p> 
+    <p>Имя владельца:</p>
+    <p><input type="text" name="name" placeholder="Ваше имя" required/></p>
+    <p>Контакты:</p>
+    <p><input type="tel" name="phone" placeholder="Телефон" pattern="\+?[0-9\s\-\(\)]+" required min="10" max="20"/></p>
+    <p>Укажите породу питомца:</p>
+    <select required>
+        <option value="first option">Сфинкс</option>
+        <option value="second option">Сиамская</option>
+        <option value="third option">Шотландская вислоухая</option>
+        <option value="fourth option">Бенгальская</option>
+        <option value="fifth option">Русская</option>
+        <option value="six option">Тайская</option>
+        <option value="seven option">Без породы</option>
+        <option value="eight option">Другое</option>
+        </select>
+    <p> Чем питается ваш питомец? </p>
+        <input type="checkbox" name="eat" value="1"/>
+         Сухой корм<br />
+        <input type="checkbox" name="eat" value="2"/> 
+        Влажный корм<br/>
+        <input type="checkbox" name="eat" value="3"/>
+         Натуральный корм <br />
+     <p>Пол питомца</p>   
+         <input type="radio" name="eat" value="1" />
+         Самец<br />
+        <input type="radio" name="eat" value="2"/> 
+        Самка<br/>    
+    <p>Комментарий:</p> 
+    <p><textarea name="comments" rows="5" cols="30" placeholder="Ваш комментарий"></textarea></p> 
+    <p>Загрузите фото питомца</p> 
+    <input type="file" name="file"/>
+    <br/>
+    <p><button>Отправить</button></p>
+    </form>
+</body>
+</html>
