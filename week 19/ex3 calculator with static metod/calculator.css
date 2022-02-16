@@ -1,0 +1,12 @@
+.calculator-container {
+    padding: 2%;
+    background-color: rgb(246, 243, 247);
+    border: 5px solid rgb(184, 184, 209);
+    margin: 3% 30%;
+}
+
+.h2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
