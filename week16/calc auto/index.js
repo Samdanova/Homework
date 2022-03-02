@@ -16,7 +16,7 @@ document.getElementById('model').onchange = function() {
       return
     }
     else if(value==1){
-      values = [...audi]
+      values = [...audi] //Элементы
     }
     else if(value==2){
       values = [...toyota]

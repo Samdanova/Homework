@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    background-color: rgb(201, 238, 243);
+    padding-top: 5%;
+    padding-bottom: 30%;
+}
+
+.text {
+    font-size: 2rem;
+    margin-bottom: 10%;
+    text-align: center;
+    ;
+}
+
+#button {
+    background-color: rgb(114, 170, 164);
+    border: 3px solid rgb(9, 54, 54);
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 2rem;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+#button:hover {
+    background-color: rgb(48, 150, 150);
+}
+
+#button.active {
+    background-color: white;
+    color: #ff6c70;
+}
+
+.advice-text {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    padding-top: 150px;
+    /* padding: 200px 40px; */
+    text-align: center;
+    color: #fff;
+    border-radius: 320px;
+    border: 3px solid rgb(9, 54, 54);
+    background: rgb(114, 170, 164);
+    margin: -12% 30%;
+    font-size: 2rem;
+}
