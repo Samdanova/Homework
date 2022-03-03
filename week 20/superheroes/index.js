@@ -1,5 +1,5 @@
 
-let rating=[];
+let rate=[];
 let json = `[{
     "name":"Бэтмен",
     "src": "img/batman.jpg",
@@ -109,31 +109,22 @@ function createSuper (data){
     let buttonLike = div.appendChild(document.createElement('button'))
     buttonLike.innerHTML = "Оценить"
     buttonLike.classList.add('buttonLike');
+    //вот здесь нужно как то добраться до имени внутри массива
+    // const index = rating.indexOf(data.name);
+    // if (index !== -1) {
+    //     document.querySelector(".input").value = rating.indexOf(data.rating)
+    // }
 
     buttonLike.addEventListener("click", setLike);
 }
 
 let likes={};
-function setLike (data){
-    let numberLike=document.querySelectorAll(".input").value
-    likes.name=data.name;
+function setLike (event){
+    let nameSuper=event.target.closest('h1').firstChild.textContent;
+    let numberLike=event.target.closest('input').firstChild.value;
+    likes.name=nameSuper;
     likes.rate=numberLike;
-    localStorage.setItem("rating",JSON.stringify(likes))
+    rate.push(likes);
+    localStorage.setItem("rating",JSON.stringify(rating));
 
 }
-
-// function getRating() 
-// {
-//     if (localStorage.getItem('rate') != null) {
-//         arrayRate = JSON.parse(localStorage.getItem('rate'));
-//         for(let i = 0; i < arrayNote.length; i++)
-//         {
-//             document.getElementById("input").value=(arrayLikes[i]);
-//         }
-//     }
-// }
-
-// button.addEventListener("click", () => {
-//     arrayNote.push(rating.value)
-//     localStorage.setItem('rate', JSON.stringify(arrayNote));
-// })
