@@ -64,7 +64,7 @@ function getSupermans (){
         let superheroes = JSON.parse(json);
     let rating=localStorage.getItem("rating");
     if(rating){
-        rating = JSON.parse(localStorage.getItem("rating"))
+        rate = JSON.parse(localStorage.getItem("rating"))
     }
     else{
         localStorage.setItem("rating", JSON.stringify([]));
@@ -106,25 +106,42 @@ function createSuper (data){
     let input = div.appendChild(document.createElement('input'));
     input.type = "number";
     input.classList.add('input');
-    let buttonLike = div.appendChild(document.createElement('button'))
+    let buttonLike = div.appendChild(document.createElement('button'));
     buttonLike.innerHTML = "Оценить"
     buttonLike.classList.add('buttonLike');
-    //вот здесь нужно как то добраться до имени внутри массива
-    // const index = rating.indexOf(data.name);
-    // if (index !== -1) {
-    //     document.querySelector(".input").value = rating.indexOf(data.rating)
-    // }
+    buttonLike.dataset.name = data.name;
+
+    const index = rate.find(item => item.name===data.name); //если item проходит проверку, то возвращает Item то есть сам объект
+    if (index) {
+        input.value=index.rate;
+    }
 
     buttonLike.addEventListener("click", setLike);
 }
 
-let likes={};
+
 function setLike (event){
-    let nameSuper=event.target.closest('h1').firstChild.textContent;
-    let numberLike=event.target.closest('input').firstChild.value;
+    const likes={};
+    let nameSuper=event.target.dataset.name;
+    console.log(nameSuper);
+    let numberLike=event.target.parentNode.querySelector('input').value;
+    console.log(numberLike);
+    const index = rate.find(item => item.name===nameSuper);
+    if (index){
+        const rate2 = rate.map((item)=> {
+            if (item.name===nameSuper){ //проходимся по каждому объекту массива
+                item.rate=numberLike;
+            }
+            return item;
+        });
+        localStorage.setItem("rating",JSON.stringify(rate2));
+        rate=rate2;
+    }
+    else {
     likes.name=nameSuper;
     likes.rate=numberLike;
     rate.push(likes);
-    localStorage.setItem("rating",JSON.stringify(rating));
-
+    localStorage.setItem("rating",JSON.stringify(rate));
 }
+}
+
