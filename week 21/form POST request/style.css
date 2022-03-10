@@ -1,0 +1,103 @@
+body {
+    font-family: 'Montserrat',
+        sans-serif;
+    background-color: rgb(77, 205, 196);
+    overflow: auto;
+}
+
+input:focus {
+    font-size: 0.7rem;
+    opacity: 1;
+}
+
+.mainForm {
+    margin: 10% 20%;
+}
+
+.signinforms {
+    padding: 3rem;
+    background-color: white;
+}
+
+input,
+fieldset {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    outline: 0;
+}
+
+input[type=text],
+input[type=tel],
+input[type=number],
+input[type=date] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+}
+
+.schedule {
+    margin-bottom: 1.5rem;
+}
+
+.inputsForm {
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.registerbtn {
+    background-color: rgb(77, 205, 196);
+    color: white;
+    font-weight: bold;
+    padding: 1rem 1.2rem;
+    margin: 0.5rem 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    background-color: #F693BC;
+    opacity: 1;
+}
+
+.linksreg {
+    color: rgb(77, 205, 196);
+    text-decoration: none;
+}
+
+.radioVars {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.schedule,
+.othersVar {
+    font-size: 0.7rem;
+}
+
+#other {
+    visibility: hidden
+}
+
+
+.borderErr {
+    border: 1px solid red;
+}
+
+
+input:valid {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.inputClass {
+    border-bottom: 1px solid black;
+}
+
+.dataError {
+    color: #ff0008;
+    margin-top: -1rem;
+    font-size: 0.8rem;
+}

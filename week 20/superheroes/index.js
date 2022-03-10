@@ -124,6 +124,7 @@ function setLike (event){
     const likes={};
     let nameSuper=event.target.dataset.name;
     console.log(nameSuper);
+    if (event.target.parentNode.querySelector('input').value>=1)&&
     let numberLike=event.target.parentNode.querySelector('input').value;
     console.log(numberLike);
     const index = rate.find(item => item.name===nameSuper);

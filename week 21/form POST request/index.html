@@ -1,0 +1,40 @@
+    <html lang="rus">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Форма регистрации</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    </head>
+    <body>
+      <div class="mainForm">
+<form name="nannyForm" onsubmit="validate()">
+  <div class="signinforms">
+    <h1>Найти няню</h1>
+    <p>Пожалуйста, заполните анкету для формирования заявки на няню и автоматической регистрации в личном кабинете.
+        </p>
+    <hr class="inputsForm">
+    <input  type="text" placeholder="Ваше имя" name="Name" id="Name" class="inputClass" oninput="dataError('errName')" required>
+    <p class="dataError" id="errName"></p>
+    <input type="text" placeholder="Ваша фамилия" name="LastName"  id="LastName" class="inputClass" oninput="dataError('errSurname')" required>
+    <p class="dataError" id="errSurname"></p>
+    <input id="Email" type="text" placeholder="Ваш e-mail" name="Email" class="inputClass" oninput="dataError('errEmail')" required>
+    <p class="dataError" id="errEmail"></p>
+    <input id="phone" type="tel" placeholder="+7 (999) 999-99-99" name="phone" class="inputClass" oninput="dataError('errMobile')"required>
+    <p class="dataError" id="errMobile"></p>
+    <input id="kidsname" type="tel" placeholder="Как зовут ребенка?" name="kidsname" class="inputClass"  oninput="dataError('errChild')" required>
+    <p class="dataError" id="errChild"></p>
+    <input  id="city" type="text" placeholder="Город" name="city" class="inputClass"  oninput="dataError('errCity')" required>
+    <p class="dataError" id="errCity"></p>
+    <input id="checked" type="checkbox" checked="checked" name="agreement" style="margin-bottom:15px"> Я согласен с политикой конфиденциальности и условиями оферты
+</label>
+    <button type="submit" id="registerbtn" class="registerbtn" onclick="validate()">Отправить</button>
+  </div>
+</form>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
