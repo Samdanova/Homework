@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страничка с библиотеками</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="shortcut icon" href="img/girls.png" type="image/png">
+</head>
+<body>
+<header>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Мои проекты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#myChart">Настроение</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#goriz-Chart">Приоритеты</a>
+          </li>
+      </ul>
+        </header>
+
+        <div class="header">
+            <div class="container-header">
+                <img class="imgStyle" src="img/notebook.png" alt="working">
+                <h1 class="display-4">Личная страничка</h1>
+            </div>  
+            <p class="lead" id=dataNow></p>      
+        </div> 
+    
+        <div class="jumbotron jumbotron-fluid jumbort2">
+            <div class="container">
+                <h3 class="display-4" id="projects">Мои проекты</h3>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">Сайт медклиники</h4>
+                        <a href="https://samdanova.github.io/Project-Figma-Medsite-fr11_1/" class="btn btn-primary">Перейти</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">Сайт подбора нянь</h4>
+                        <a href="https://mrglk.github.io/projectMynanny/" class="btn btn-primary">Перейти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="chart-container" name="myChart">
+        <canvas id="myChart"></canvas>
+        <canvas id="goriz-Chart"></canvas>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+crossorigin="anonymous"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.giphy-item {
+    margin: 10px;
+    width: 20%;
+}
+
+#img-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

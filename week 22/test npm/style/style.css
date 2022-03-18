@@ -1,0 +1,41 @@
+.lead {
+    margin-left: 50%;
+}
+
+.nav {
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgStyle {
+    width: 100px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header {
+    margin: 3%;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 110px;
+    height: 50vh;
+    width: 50vw;
+}
+
+#goriz-Chart {
+    margin-top: 3%
+}
