@@ -10,7 +10,7 @@ export const data = {
   datasets: [
     {
       label: 'My life',
-      data: [12, 19, 3, 5, 2, 3],
+      data: [12, 10, 3, 5, 2, 3],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -35,9 +35,9 @@ function App() {
   return (
     <div className="App">
   <Pie data={data}
-      width={300}
-      height={300} 
-/>;
+      width={100}
+      height={100} 
+/>
     </div>
   );
 }
