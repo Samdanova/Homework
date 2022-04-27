@@ -1,0 +1,51 @@
+$blueColor: rgb(43, 120, 203);
+$greenColor: rgb(52, 117, 77);
+$redColor:rgb(200, 18, 18);
+$blackColor:rgb(24, 23, 23);
+$font-color: rgb(255, 255, 255);
+.blue {
+    color:$font-color;
+    background-color: $blueColor;
+    width: 100%;
+}
+.green {
+    color:$font-color;
+background-color: $greenColor;
+}
+.red{
+    color:$font-color;
+    background-color: $redColor; 
+}
+.black{
+    color:$font-color;
+    background-color: $blackColor; 
+}
+
+
+.cardSpeed {
+    font-size: 25px;
+    color: rgb(146, 145, 145);
+    height: 60px;
+    margin-top: 20px;
+  }
+  
+  .cardDetails {
+    font-size: 20px;
+    color: rgb(146, 145, 145);
+  }
+
+  .cardPrice {
+    font-size: 35px;
+    color: $font-color;
+  }
+  .cardTitle{
+    color: $font-color;
+    font-size: 25px;;
+  }
+
+  .site-card-border-less-wrapper{
+  padding: 30px;
+  text-align: center;}
+  .card-body{
+      margin: 5px;
+  }
