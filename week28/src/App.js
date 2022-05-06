@@ -1,5 +1,5 @@
 import React from 'react';
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.min.css';
 import { Row } from 'antd';
 import './App.css';
 import CardTariffs from './components/Card';
