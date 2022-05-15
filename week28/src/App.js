@@ -3,6 +3,8 @@ import 'antd/dist/antd.min.css';
 import { Row } from 'antd';
 import './App.css';
 import CardTariffs from './components/Card';
+import { useState } from 'react';
+import Item from 'antd/lib/list/Item';
 
 const tariffs = [
     {
@@ -33,12 +35,18 @@ const tariffs = [
 ]
 
 function App() {
+    const [card, setCard] = useState();
+    const handleClick = (card) => {
+        setCard(card);
+    }
     return (
         <div className="site-card-border-less-wrapper">
             <Row>
                 {
                     tariffs.map(
                         (tariff) => <CardTariffs
+                        isSelected={tariff.name===card}
+                        onClick={handleClick}
                             name={tariff.name}
                             price={tariff.price}
                             speed={tariff.speed}
