@@ -7,17 +7,12 @@ export default function Chat() {
     const [messages, setMessages] = useState([]); //состояние сообщений чата
     console.log(messages)
     const result = messages.map((item, index) => {
-        return <div className={index === 0 ? 'message last' : 'message'} key={index}>{item}</div>
+        return <div className={!index ? 'message last' : 'message'} key={index}>{item}</div>
     })
 
     const handleChange = (event) => {
         const target = event.target.value.toLowerCase()
-        let changeTarget;
-        if ((target.includes('viagra')) || (target.includes('xxx'))) {
-            changeTarget = target.replace(/viagra|xxx/g, "***");
-        } else {
-            changeTarget = target;
-        }
+        let changeTarget = target.replace(/viagra|xxx/g, "***");
         setState(changeTarget)
     }
     const Send = () => {
