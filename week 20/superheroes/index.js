@@ -120,29 +120,33 @@ function createSuper (data){
 }
 
 
-function setLike (event){
-    const likes={};
-    let nameSuper=event.target.dataset.name;
+function setLike(event) {
+    const likes = {};
+    let nameSuper = event.target.dataset.name;
     console.log(nameSuper);
-    if (event.target.parentNode.querySelector('input').value>=1){
-    let numberLike=event.target.parentNode.querySelector('input').value;
-    console.log(numberLike);}
-    const index = rate.find(item => item.name===nameSuper);
-    if (index){
-        const rate2 = rate.map((item)=> {
-            if (item.name===nameSuper){ //проходимся по каждому объекту массива
-                item.rate=numberLike;
+    // if (event.target.parentNode.querySelector('input').value >= 1){
+        let numberLike = event
+            .target
+            .parentNode
+            .querySelector('input')
+            .value;
+        console.log(numberLike);
+
+    const index = rate.find(item => item.name === nameSuper);
+    if (index) {
+        const rate2 = rate.map((item) => {
+            if (item.name === nameSuper) { //проходимся по каждому объекту массива
+                item.rate = numberLike;
             }
             return item;
         });
-        localStorage.setItem("rating",JSON.stringify(rate2));
-        rate=rate2;
+        localStorage.setItem("rating", JSON.stringify(rate2));
+        rate = rate2;
+    } else {
+        likes.name = nameSuper;
+        likes.rate = numberLike;
+        rate.push(likes);
+        localStorage.setItem("rating", JSON.stringify(rate));
     }
-    else {
-    likes.name=nameSuper;
-    likes.rate=numberLike;
-    rate.push(likes);
-    localStorage.setItem("rating",JSON.stringify(rate));
-}
 }
 
