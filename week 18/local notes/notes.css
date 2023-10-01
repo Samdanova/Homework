@@ -10,3 +10,12 @@
 .jumbotronStyle {
     background-color: #e5bebe;
 }
+
+.done{
+    text-decoration: line-through;
+}
+
+.note{
+    width: 50vw;
+    list-style: none;
+}
